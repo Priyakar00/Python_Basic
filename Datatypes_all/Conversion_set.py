@@ -1,0 +1,16 @@
+#set to list({} to [])
+a=set([1,2,3,4,5])
+print(a)
+print(type(a))
+lst=list(a)
+print(lst)
+print(type(lst))
+
+print()
+
+#set to tuple({} to ())
+print(a)
+print(type(a))
+t=tuple(a)
+print(t)
+print(type(t))

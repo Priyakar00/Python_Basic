@@ -1,0 +1,13 @@
+from pymysql import *
+con=connect(host="localhost",user="root",password="",db="form")
+a=con.cursor()
+id=int(input("Enter id: "))
+name=input("Enter name: ")
+cont=int(input("Enter contact: "))
+gen=input("Enter gender: ")
+course=input("Enter course: ")
+hob=input("Enter hobbies: ")
+sql="insert into registration values(%d,'%s',%d,'%s','%s','%s')"%(id,name,cont,gen,course,hob)
+a.execute(sql)
+con.commit()
+print("data inserted")
